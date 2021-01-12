@@ -2,6 +2,7 @@
 
 scm:
   url: https://github.com/melezhik/sparky-playground.git
+  branch: main
 
 sparrowdo:
   no_sudo: true
