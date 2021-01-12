@@ -1,0 +1,9 @@
+#!raku
+
+directory "project";
+
+git-scm 'https://github.com/melezhik/rakudist-teddy-bear.git', %(
+  to => "project"
+);
+
+bash "ls -l {%*ENV<PWD>}/project";

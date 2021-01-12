@@ -1,0 +1,16 @@
+#crontab: "2 * * * *"
+
+scm:
+  url: https://gitlab.com/jjatria/http-tiny.git
+
+sparrowdo:
+  no_sudo: true
+  no_index_update: false
+  bootstrap: false
+  format: default
+
+disabled: false
+
+allow_manual_run: true
+
+keep_builds: 20

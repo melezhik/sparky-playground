@@ -1,0 +1,7 @@
+[repository] :: index updated from https://sparrowhub.io/repo/api/v1/index
+[fez login] :: spawn fez login
+[fez login] :: >>= Username: melezhik
+[fez login] :: >>= Password: ***********
+[fez login] :: 
+[fez login] :: >>= Login successful, you can now upload dists
+[task check] stdout match <:i 'login successful'> True

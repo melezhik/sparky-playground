@@ -1,0 +1,4 @@
+bash "rakudo --version";
+
+shell "cd {%*ENV<HOME>}/projects/RakuPlay/issues && {%*ENV<HOME>}/.raku/bin/tomty --all --show-failed"
+

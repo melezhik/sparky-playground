@@ -1,0 +1,4 @@
+#!perl6
+
+http-ok 'http://raku.org', %( has-content => "'Raku'" );
+

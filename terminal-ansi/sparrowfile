@@ -1,0 +1,27 @@
+say tags().perl;
+
+directory "scm";
+
+if  tags()<SCM_URL> {
+
+  git-scm tags()<SCM_URL>, %(
+    to => "scm",
+    branch => tags<SCM_BRANCH>
+  );
+
+} else {
+
+  git-scm "https://git.sr.ht/~bduggan/raku-terminal-ansi", %(
+    to => "scm",
+    branch => "master"
+  );
+
+}
+
+bash "git log --name-status HEAD^..HEAD", %(
+  cwd => "{%*ENV<PWD>}/scm"
+);
+
+bash "zef install . --force-install", %(
+  cwd => "{%*ENV<PWD>}/scm"
+);

@@ -1,0 +1,7 @@
+[repository] :: index updated from https://sparrowhub.io/repo/api/v1/index
+[my fez meta] :: spawn fez meta
+[my fez meta] :: >>= What would you like your display name to show? Alexey Melezhik
+[my fez meta] :: >>= What's your website? https://sparrowhub.io
+[my fez meta] :: >>= Public email address? melezhik@gmail.com
+[my fez meta] :: =<< Your meta info has been updated
+[task check] stdout match <:i 'meta info has been updated'> True

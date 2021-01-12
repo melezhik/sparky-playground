@@ -1,0 +1,11 @@
+[repository] :: index updated from https://sparrowhub.io/repo/api/v1/index
+[bash: /home/sparky/.raku/bin/fez --file=META6.json uploa ...] :: stderr: ++ test '!' -z /home/sparky/.sparky/projects/fez-test/files/../../teddy-bear
+++ cwd_cmd='cd /home/sparky/.sparky/projects/fez-t
+[bash: /home/sparky/.raku/bin/fez --file=META6.json uploa ...] :: stderr: est/files/../../teddy-bear &&'
+++ test -z
+++ bash -c 'cd /home/sparky/.sparky/projects/fez-test/files/../../teddy-bear &&  /home/sparky/.raku/bin/fez --file=META6.json upload'
+[bash: /home/sparky/.raku/bin/fez --file=META6.json uploa ...] :: stderr: bash: line 0: cd: /home/sparky/.sparky/projects/fez-test/files/../../teddy-bear: No such file or directory
+++ exit 1
+[bash: /home/sparky/.raku/bin/fez --file=META6.json uploa ...] :: <empty stdout>
+[bash: /home/sparky/.raku/bin/fez --file=META6.json uploa ...] :: task exit status: 1
+[bash: /home/sparky/.raku/bin/fez --file=META6.json uploa ...] :: task bash: /home/sparky/.raku/bin/fez --file=META6.json uploa ... FAILED
