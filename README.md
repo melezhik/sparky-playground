@@ -2,6 +2,6 @@
 
 My Sparky Playround scenarios
 
-# Sparky playground
+# playground server
 
 http://161.35.142.50/
