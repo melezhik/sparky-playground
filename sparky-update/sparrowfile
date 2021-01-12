@@ -3,7 +3,7 @@ say tags().perl;
 if  tags()<SCM_URL> {
 
   git-scm tags()<SCM_URL>, %(
-    to => "scm",
+    to => "{%*ENV<HOME>}/.sparky/projects",
     branch => tags<SCM_BRANCH>
   );
 
