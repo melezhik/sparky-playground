@@ -25,5 +25,5 @@ bash "git log --name-status HEAD^..HEAD", %(
 
 say "running integration tests with Tomty\n====================================\n";
 
-shell "cd {%*ENV<PWD>}/files/.tomty && {%*ENV<HOME>}/.raku/bin/tomty --all --verbose";
+shell "cd {%*ENV<PWD>}/files/ && {%*ENV<HOME>}/.raku/bin/tomty --all --verbose";
 
