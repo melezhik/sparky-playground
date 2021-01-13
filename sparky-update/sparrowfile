@@ -16,3 +16,6 @@ if  tags()<SCM_URL> {
 
 }
 
+bash "git log --name-status HEAD^..HEAD", %(
+  cwd => "{%*ENV<HOME>}/.sparky/project"
+);
