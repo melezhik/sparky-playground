@@ -11,7 +11,7 @@ if  tags()<SCM_URL> {
 
 } else {
 
-  git-scm "https://github.com/tony-o/raku-fez.git", %(
+  git-scm "https://github.com/melezhik/raku-fez.git", %(
     to => "scm",
     branch => "master"
   );
