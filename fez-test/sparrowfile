@@ -11,7 +11,7 @@ if  tags()<SCM_URL> {
 
 } else {
 
-  git-scm "https://github.com/melezhik/raku-fez.git", %(
+  git-scm "https://github.com/tony-o/raku-fez.git", %(
     to => "scm",
     branch => "master"
   );
@@ -22,4 +22,8 @@ bash "git log --name-status HEAD^..HEAD", %(
   cwd => "{%*ENV<PWD>}/scm"
 );
 
-EVALFILE "scm/.sparky/sparrowfile"
+
+say "running integration tests with Tomty\n====================================\n";
+
+shell "cd {%*ENV<PWD>}/files/.tomty && {%*ENV<HOME>}/.raku/bin/tomty --all --verbose";
+
